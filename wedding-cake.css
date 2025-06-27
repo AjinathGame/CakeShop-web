@@ -1,0 +1,1004 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid purple;
+    position: fixed;
+    box-shadow: 0px 2px 2px whitesmoke;
+
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: rgb(67, 153, 187);
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-left: 25px;
+}
+
+.cake-icon {
+    font-size: 2.5rem;
+    /* margin-right: 0.5rem; */
+    animation: bounce 1.2s infinite;
+
+}
+
+.shop-name {
+    color: purple;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+}
+
+.search-bar input {
+    height: 40px;
+    width: 25vw;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid purple;
+}
+
+.search-bar input:hover {
+    transition: 0.5s;
+    border: 2px solid purple;
+    transform: scale(1.1);
+
+}
+
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: auto;
+    padding-right: 35px;
+}
+
+.icon-bar {
+    background-color: white;
+    height: 12vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding-right: 35px;
+}
+
+.all-icons {
+    background-color: purple;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.all-icons p {
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+.all-icons:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    border: 2px solid purple;
+    background-color: white;
+    color: purple;
+}
+
+.all-icons p {
+    color: white;
+}
+
+.all-icons p:hover {
+    color: purple;
+    font-size: 15px;
+
+
+}
+
+.icon-bar i:hover {
+    color: purple;
+    transition: 0.5s;
+}
+
+.icon-bar i {
+    font-size: 25px;
+    color: white;
+
+}
+
+.main-div1 {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wedding {
+    height: 700px;
+    width: 100vw;
+    background-image: url("./images/img.jpg");
+    background-size: cover;
+}
+
+.wedding p {
+    font-size: 1.5rem;
+    color: purple;
+    font-family: arial;
+}
+
+.wedding-paragraph {
+    background-color: white;
+    height: 40px;
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    margin-top: 550px;
+    margin-left: 150px;
+    border-radius: 5px;
+    /* align-items: center; */
+
+}
+
+.wedding img {
+    height: 90%;
+    width: 100%;
+    background-color: rgb(153, 153, 213);
+
+    object-fit: fill;
+}
+
+p {
+    color: rgb(67, 153, 187);
+    font-weight: 900;
+
+    font-family: Castellar;
+
+    margin-bottom: 20%;
+    letter-spacing: 3px;
+
+
+
+}
+
+.main-div2 {
+    height: 270vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+
+}
+
+
+.main-cake-div {
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 280px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(119, 115, 115);
+    overflow: hidden;
+    border: 2px solid purple;
+    ;
+
+}
+
+.main-heading-div {
+    background-color: whitesmoke;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cake-div img {
+    height: 60%;
+    width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.main-cake-div p {
+    font-size: 13px;
+    padding-left: 13px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-family: arial;
+
+
+}
+
+.main-cake-div button {
+    height: 40px;
+    width: 230px;
+    border: none;
+    margin-left: 22px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: purple;
+
+
+}
+
+.main-cake-div button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: white;
+    color: purple;
+    border: 2px solid purple;
+    transition: 0.5s;
+    font-weight: bolder;
+
+}
+
+.main-heading-div span {
+    color: purple;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.main-heading-div h2 {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.main-div3 {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(to left, purple, aqua);
+    border-radius: 6px;
+    /* margin: 30px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+
+    text-align: center;
+
+
+
+}
+
+.main-heading-div2 {
+    height: 100px;
+    background: linear-gradient(to left, purple, aqua);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: purple;
+    margin-top: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    ;
+}
+
+.wishes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, purple, aqua);
+    height: 30vh;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid purple;
+}
+
+.wishes img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: fill;
+    box-shadow: palevioletred 0px 0px 10px;
+    border: 2px solid purple;
+    ;
+
+}
+
+
+.wishes p {
+    color: purple;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin-top: 25%;
+}
+
+
+.form {
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form span {
+
+
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: rgb(180, 71, 158);
+    text-align: center;
+   
+    letter-spacing: 2px;
+   
+}
+
+
+.main-cake-div img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #232323;
+    color: white;
+    width: 100vw;
+    padding: 30px 0;
+    margin-top: 1px;
+}
+
+.footer-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.main-logo .shop-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: purple;
+}
+
+.connection {
+    text-align: center;
+}
+
+.connection span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: purple;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        position: static;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+       
+
+    }
+
+    .search-bar input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-bar input:hover {
+        transform: none;
+    }
+
+    .icon-bar {
+        padding-right: 0;
+        gap: 15px;
+        height: auto;
+    }
+
+    .all-icons {
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .main-div1 {
+        height: auto;
+        width: 100vw;
+        display: flex;
+    }
+
+    .wedding {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .wedding-paragraph {
+        width: 90%;
+        margin: 0 0 20px 0;
+        height: auto;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .wedding-paragraph p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+
+    .main-div2 {
+        height: auto;
+        padding: 40px 10px;
+        gap: 30px;
+    }
+
+    .main-heading-div h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .main-heading-div span {
+        font-size: 1.6rem;
+    }
+
+    .main-cake-div {
+        width: 70%;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-cake-div button {
+        height: 40px;
+        width: 230px;
+        border: none;
+       
+    }
+
+
+    .main-div3 {
+        height: 250px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-heading-div2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .wishes {
+        flex-direction: column;
+        width: 90%;
+        height: 190px;
+        margin: 20px auto 0;
+       
+    }
+
+    .wishes img {
+        margin-bottom: 20px;
+    }
+
+    .wishes p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    footer {
+        margin-top: 1px;
+        padding: 30px 15px;
+    }
+
+    .footer-page {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        position: static;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        padding-left: 0;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+       
+    }
+
+    .search-bar input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-bar input:hover {
+        transform: none;
+        
+    }
+
+    .icon-bar {
+        height: auto;
+       
+        padding-right: 0;
+        
+    }
+
+    .all-icons {
+        height: 40px;
+        width: 40px;
+    }
+
+    
+    .wedding {
+        height: 500px;
+        
+        background-position: center;
+        
+        display: flex;
+        
+        align-items: flex-end;
+        
+        justify-content: center;
+        
+    }
+
+    .wedding-paragraph {
+        width: 90%;
+        
+        margin: 0 0 30px 0;
+        
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .wedding-paragraph p {
+        font-size: 1.2rem;
+        
+        text-align: center;
+        margin: 0;
+        
+    }
+
+    .main-heading-div h2 {
+        font-size: 1.5rem;
+        
+    }
+
+    .main-heading-div span {
+        font-size: 1.5rem;
+        
+    }
+
+    
+    .main-div2 {
+        height: auto;
+        
+        padding: 40px 20px;
+        
+        gap: 30px;
+        
+        justify-content: center;
+        
+    }
+
+    .main-cake-div {
+        width: 45%;
+        
+        max-width: 300px;
+       
+    }
+
+    .main-cake-div button {
+        width: 90%;
+        
+        margin-left: 5%;
+       
+    }
+
+    
+    .main-div3 {
+        height: auto;
+        
+        padding: 30px 20px;
+        
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        
+        justify-content: center;
+    }
+
+    .main-heading-div2 {
+        font-size: 1.5rem;
+       
+        height: 80px;
+        margin-bottom: 20px;
+        
+    }
+
+    .wishes {
+        flex-direction: column;
+        
+        width: 90%;
+        
+        height: 190px;
+        
+        margin: 20px auto;
+        
+        padding: 20px;
+        
+        box-sizing: border-box;
+    }
+
+    .wishes img {
+        height: 15vh;
+        width: 15vh;
+        margin-bottom: 15px;
+    }
+
+    .wishes p {
+        font-size: 1.1rem;
+        margin-top: 0;
+    }
+
+   
+    footer {
+        padding: 20px 15px;
+    }
+
+    .footer-page {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .main-logo,
+    .connection,
+    .copyright {
+        width: auto;
+        text-align: center;
+    }
+
+    
+    .form span {
+        font-size: 32px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1272px) {
+
+    
+    nav {
+        height: 90px;
+        
+        justify-content: space-evenly;
+        
+        padding: 0 30px;
+       
+        position: fixed;
+        
+        flex-wrap: wrap;
+        
+    }
+
+    .logo {
+        font-size: 1.9rem;
+        
+        padding-left: 0;
+        
+    }
+
+    .cake-icon {
+        font-size: 2.3rem;
+    }
+
+    
+
+    .icon {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 0px;
+
+
+    }
+
+    .icon i {
+        font-size: 25px;
+        
+        text-align: center;
+
+    }
+
+    .icon-bar {
+        height: auto;
+        padding-right: 0;
+        gap: 20px;
+        
+    }
+
+    .all-icons {
+        height: 42px;
+        width: 42px;
+    }
+
+    
+    .wedding {
+        height: 600px;
+       
+        background-position: center;
+        display: flex;
+        
+        align-items: flex-end;
+        
+        justify-content: center;
+        
+    }
+
+    .wedding-paragraph {
+        width: 85%;
+        
+        margin: 0 auto 50px auto;
+        
+        height: auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .wedding-paragraph p {
+        font-size: 1.3rem;
+        
+        text-align: center;
+        margin: 0;
+    }
+
+    
+    .main-div2 {
+        height: auto;
+        
+        padding: 50px 30px;
+        
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .main-cake-div {
+        width: 30%;
+        
+        max-width: 290px;
+        
+        height: 380px;
+        
+    }
+
+    .main-cake-div button {
+        width: 85%;
+        
+        margin-left: 7.5%;
+        
+    }
+
+    .main-heading-div h2 {
+        font-size: 1.6rem;
+        
+    }
+
+    .main-heading-div span {
+        font-size: 1.6rem;
+       
+    }
+
+    
+    .main-div3 {
+        height: auto;
+       
+        padding: 40px 30px;
+        flex-direction: row;
+       
+        justify-content: space-around;
+        
+        align-items: center;
+    }
+
+    .main-heading-div2 {
+        font-size: 1.6rem;
+        
+        height: 90px;
+        margin-bottom: 0;
+        
+        width: 100%;
+       
+    }
+
+    .wishes {
+        flex-direction: row;
+        
+        width: 90%;
+        
+        height: 190px;
+        
+        margin: 20px auto;
+       
+        padding: 20px;
+        
+        box-sizing: border-box;
+        justify-content: space-evenly;
+    }
+
+    .wishes img {
+        height: 15vh;
+        width: 15vh;
+        margin-bottom: 15px;
+        
+    }
+
+    .wishes p {
+        font-size: 1.2rem;
+        text-align: left;
+       
+    }
+
+   
+    .form span {
+        font-size: 36px;
+       
+    }
+
+    
+    footer {
+        padding: 25px 20px;
+    }
+
+    .footer-page {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
