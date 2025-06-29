@@ -1,0 +1,798 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(40px);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    border-bottom: 1px solid purple;
+    background-color: white;
+    flex-wrap: wrap; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: purple;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.logo .cake-icon {
+    font-size: 2rem;
+   
+}
+
+.logo .shop-name {
+    font-size: 2rem;
+    
+    font-weight: bold;
+    color: purple;
+   
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 5;
+        transform: translateY(0);
+    }
+}
+.search-bar {
+    display: flex;
+    flex-grow: 1; 
+    max-width: 500px; 
+    margin: 0 20px;
+}
+.search-bar:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.search-bar input {
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid rgb(238, 115, 136);
+    outline: none;
+}
+
+.search-bar .icon {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid rgb(238, 115, 136);
+    cursor: pointer;
+}
+
+.search-bar .icon i {
+    font-size: 1.2rem;
+}
+
+.icon-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    gap: 20px;
+}
+.icon-bar i:hover{
+    transform: scale(1.20);
+    transition: all 0.3s ease-in-out;
+}
+.icon-bar i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: purple;
+}
+
+
+
+.Categories {
+    height: 120px;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.Categories span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: purple;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.Categories-container {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.cake-Categories1 {
+    height: 250px;
+    width: 22%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-Categories1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.cake-Categories1 img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.cake-Categories1-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.cake-Categories2 {
+    height: 250px;
+    width: 22%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-Categories2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cake-Categories2 img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.cake-Categories2-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.cake-Categories3 {
+    height: 250px;
+    width: 22%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-Categories3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cake-Categories3 img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cake-Categories3-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.cake-Categories4 {
+    height: 250px;
+    width: 22%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-Categories4 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cake-Categories4 img:hover{
+     transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.cake-Categories4-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.Cake {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cake span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: purple;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.Cake-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+}
+
+.cake-container-2 {
+    display: inline-flex;
+    position: relative;
+    padding-left: 40px;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    
+}
+.cake-container-2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.cakes {
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(126, 118, 118) ;
+    flex-shrink: 0;
+    position: relative;
+    margin: 20px 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 7px;
+    cursor: pointer;
+   
+
+}
+.cake-img{
+    height: 70%;
+    width: 100%;
+    display:flex;
+    top: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.cake-img img{
+    height: 100%;
+    width: 100%;
+   
+    object-fit: cover;
+} 
+.cake-img img:hover{
+     transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+   
+}
+.cakes span{
+    font-size: 1.3em;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#cake-name-1{
+    padding: 12px;
+    font-size:1.1em ;
+}
+#cake-name-3{
+    padding: 12px;
+    font-size:1.1em ;
+}
+#cake-name-5{
+    padding: 12px;
+    
+}
+#cake-name-6{
+    padding: 10px;
+    font-size:1.1em ;
+}
+#cake-name-7{
+    padding: 12px;
+    font-size:1.1em ;
+}
+#cake-price{
+    color: purple;
+}
+.cakes h3{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color:green ;
+    padding: 6px 20px;
+}
+#cake-weight{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+#btn-1{
+    padding: 5px;
+    margin-left: 130px;
+    margin-bottom: 150px;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+
+}
+#btn-1 i{
+    font-size: 30px;
+}
+#btn-1:hover{
+    border: 2px solid purple;
+    background-color: white;
+    color: purple;
+    transition:all 0.3s ease-in-out
+}
+
+
+.Pastry{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pastry span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: purple;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.pastry-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+}
+
+.pastry-container-2 {
+    display: inline-flex;
+    position: relative;
+    padding-left: 40px;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    
+}
+.pastry-container-2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.pastries {
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(126, 118, 118) ;
+    flex-shrink: 0;
+    position: relative;
+    margin: 20px 10px;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+      border-radius: 7px;
+
+}
+
+.pastry-img{
+    height: 70%;
+    width: 100%;
+    display:flex;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 10px;
+}
+.pastry-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+.pastry-img img:hover{
+     transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.pastries span{
+    font-size: 1.3em;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#pastry-name-1{
+    padding: 12px;
+    font-size:1.1em ;
+}
+#pastry-name-8{
+    padding: 12px;
+    font-size:1.1em ;
+}
+.pastries h3{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color:green ;
+    padding: 6px 20px;
+}
+#pastry-price{
+    color: purple;
+}
+#weight-1{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+#btn-1{
+    padding: 5px;
+    margin-left: 110px;
+    margin-bottom: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+#btn-pastry-1{
+    padding: 1px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:#D9D9D9;
+    margin-left: 20px;
+    font-weight: 600;
+    color:white;
+}
+#btn-pastry-2{
+     padding: 1px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:purple;
+    font-weight: 600;
+    color:white;
+}
+.Baker{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Baker span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: purple;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.bakerware-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+}
+
+.bakerware-container-2 {
+    display: inline-flex;
+    position: relative;
+    padding-left: 40px;
+    scrollbar-color: transparent transparent;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    
+}
+.bakerware-container-2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.bakerware {
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(126, 118, 118) ;
+    flex-shrink: 0;
+    position: relative;
+    margin: 20px 10px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    cursor: pointer;
+     border-radius: 7px;
+
+}
+
+.bakerware-img{
+    height: 70%;
+    width: 100%;
+    display:flex;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 10px;
+}
+.bakerware-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+.bakerware-img img:hover{
+     transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.bakerware span{
+    font-size: 1.3em;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.bakerware h3{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color:green ;
+    padding: 6px 20px;
+}
+#bakerware-price{
+    color: purple;
+}
+#btn-1{
+    padding: 5px;
+    margin-left: 110px;
+    margin-bottom: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+#btn-bakerware-1{
+    padding: 1px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:#D9D9D9;
+    margin-left: 20px;
+    font-weight: 600;
+    color:white;
+}
+#btn-bakerware-2{
+     padding: 1px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:purple;
+    font-weight: 600;
+    color:white;
+}
+
+footer {
+    background-color: #232323;
+    height: 130px;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.main-logo .shop-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: purple;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.connection {
+    text-align: center;
+}
+
+.connection span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color:purple;
+    transform: scale(1.20);
+    transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 0.9rem;
+    color: #bbb;
+}
+@media screen and (max-width: 480px) {
+    nav {
+        justify-content: space-between;
+        height: 17vh;
+        gap: 15px;
+    }
+
+    .logo .shop-name {
+       font-size: 1.5rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        order: 3;
+        margin-bottom: 15px;
+    }
+    .Categories-container{
+        height: 1200px;
+    }
+    .cake-Categories1{
+        width: 50vw;
+    }
+    .cake-Categories2{
+        width: 50%;
+    }
+    .cake-Categories3{
+        width: 50%;
+    }
+    .cake-Categories4{
+        width: 50%;
+    }
+    .cakes{
+        margin: 10px;
+    }
+    .cake-container-2{
+        padding-left: 10px;
+    }
+    .pastry-container-2{
+        padding-left: 10px;
+    }
+    .bakerware-container-2{
+        padding-left: 10px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   
+    .Categories-container{
+        height: 600px;
+    }
+    .cake-Categories1{
+        width: 40vw;
+    }
+    .cake-Categories2{
+        width: 40%;
+    }
+    .cake-Categories3{
+        width: 40%;
+    }
+    .cake-Categories4{
+        width: 40%;
+    }
+    .cake-container-2{
+        padding-left: 10px;
+    }
+    .pastry-container-2{
+        padding-left: 10px;
+    }
+    .bakerware-container-2{
+        padding-left: 10px;
+    }
+}
