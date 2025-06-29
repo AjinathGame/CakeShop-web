@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+;
+}
+
+.name {
+    width: 100vw;
+    text-align: center;
+    font-size: 3rem;
+    color: purple;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 60vw;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form #span {
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.titie {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+form{
+    width: 60vw;
+    border: 2px solid purple;
+    padding: 15px;
+    border-radius: 14px;
+}
+.from-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.from-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form span {
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: #444;
+}
+.f-name{
+    padding: 10px;
+}
+.c-name{
+    padding: 10px;
+}
+.e-name{
+    padding: 10px;
+}
+.C-name{
+    padding: 10px;
+}
+.s-name{
+    padding: 10px;
+}
+.m-name{
+    padding: 10px;
+}
+.f-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.c-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.e-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.C-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.s-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.m-name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+input:hover {
+    border-color: purple;
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-container button {
+    padding: 12px 25px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container button:hover {
+    background-color:rgb(87, 7, 87) ;
+}
+
+footer {
+    background-color: #232323;
+    color: white;
+    width: 100vw;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.main-logo .shop-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: purple;
+}
+
+.connection {
+    text-align: center;
+}
+
+.connection span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: purple;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .form #span {
+        font-size: 1.8rem;
+    }
+
+    .form .titie {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .from-name {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    
+
+     .f-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .c-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .e-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .C-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .s-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .m-name{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .btn-container button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-page {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .main-logo {
+        margin-bottom: 20px;
+    }
+
+    .connection {
+        margin-bottom: 20px;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+
+    .copyright {
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+}
