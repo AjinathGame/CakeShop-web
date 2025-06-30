@@ -3,12 +3,17 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .main-div {
     background-color: white;
     height: 12vh;
     width: 100vw;
     display: flex;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 
@@ -202,7 +207,7 @@
 .main-heading-div2 {
     background-color: whitesmoke;
     height: 15vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +236,7 @@
     flex-wrap: wrap;
 }
 
-.main2-div-inner-div{
+.main2-div-inner-div {
     background-color: white;
     height: 450px;
     width: 300px;
@@ -394,7 +399,7 @@
 }
 
 .offer-div {
-    background: linear-gradient(to left,purple,aqua);
+    background: linear-gradient(to left, purple, aqua);
     height: 200px;
     width: 100%;
     display: flex;
@@ -538,6 +543,7 @@ ul a {
 
     body {
         margin: 0;
+        padding: 0;
         font-family: sans-serif;
     }
 
@@ -623,6 +629,7 @@ ul a {
     }
 
     .main-div {
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -630,7 +637,7 @@ ul a {
 
     .nav1 {
         background-color: white;
-        width: auto;
+        width: 100%;
         height: auto;
         padding: 10px 0;
         display: flex;
@@ -682,6 +689,7 @@ ul a {
     .main-heading-div,
     .main-heading-div2 {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
 
@@ -693,6 +701,7 @@ ul a {
 
     .main2-div {
         height: auto;
+        width: 100%;
         gap: 20px;
         padding: 20px 0;
     }
@@ -818,7 +827,7 @@ ul a {
     }
 }
 
-/*------------------------------- Media Query for screens up to 481 To 768ppx (Tablet devices)----------------------------------- */
+/*------------------------------- Media Query for screens up to 481 To 768px (Tablet devices)----------------------------------- */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -909,6 +918,7 @@ ul a {
     }
 
     .main-div {
+        width: 100%;
         flex-direction: row;
         height: auto;
         position: fixed;
@@ -918,7 +928,7 @@ ul a {
     .nav2 {
         flex-direction: row;
         height: auto;
-        width: 100vw;
+        width: 100%;
         gap: 10px;
         padding: 10px 0;
         display: flex;
@@ -962,6 +972,7 @@ ul a {
 
     .main-heading-div,
     .main-heading-div2 {
+        width: 100%;
         height: auto;
         padding: 20px 10px;
         text-align: center;
@@ -973,6 +984,7 @@ ul a {
     }
 
     .main2-div {
+        width: 100%;
         flex-direction: row;
         gap: 20px;
         height: 1100px;
@@ -982,6 +994,11 @@ ul a {
         width: 40%;
         height: 420px;
     }
+
+     .main2-div-inner-div p{
+        text-align: center;
+
+     }
 
     .main2-div-inner-div img {
         height: 60%;
@@ -999,8 +1016,12 @@ ul a {
 
     .main-images-div {
         width: 40%;
-        height: auto;
+        height: 170px;
         gap: 15px;
+    }
+
+    .main-images-div p{
+        text-align: center;
     }
 
     .main-images-div img {
@@ -1015,6 +1036,7 @@ ul a {
 
     footer {
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 15px;
         height: auto;
         padding: 20px 0;
@@ -1048,9 +1070,9 @@ ul a {
 
 }
 
-/*------------------------- Media Query for screens from 769px to 1255px (large tablets/small laptops) -----------------------*/
+/*------------------------- Media Query for screens from 769px to 1255px (large tablets) -----------------------*/
 
-@media screen and (min-width: 769px) and (max-width: 1272px) {
+@media screen and (min-width: 769px) and (max-width: 1050px) {
 
     body {
         margin: 0;
@@ -1105,6 +1127,10 @@ ul a {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
+    .main-div{
+        width: 100%;
+    }
+
     .nav1 .sidebar a {
         display: block;
     }
@@ -1139,6 +1165,7 @@ ul a {
     }
 
     .nav1 {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1149,10 +1176,6 @@ ul a {
         font-size: 14px;
         padding: 6px 10px;
         display: none;
-    }
-
-    .nav1 {
-        width: 100%;
     }
 
     .nav2 {
@@ -1179,9 +1202,14 @@ ul a {
     }
 
     .main2-div {
+        width: auto;
         height: auto;
         padding: 40px 20px;
         gap: 30px;
+    }
+
+    .main-heading-div2,.main-heading-div{
+        width: 100%;
     }
 
     .main2-div-inner-div {
@@ -1190,14 +1218,25 @@ ul a {
 
     .cake-info-main-div {
         height: auto;
+        width: auto;
+        gap: 0;
+    }
+
+    .main-images-div {
+        width: 25%;
     }
 
     .main-images-div img {
-        width: 22%;
+        width: 24%;
     }
 
     .main-images-div img {
-        width: 90%;
+        width: 85%;
+    }
+
+    .main-images-div p {
+        font-size: 0.9rem;
+        font-weight: bolder;
     }
 
     .heading-btn-div {
@@ -1212,5 +1251,57 @@ ul a {
     footer {
         padding: 20px 10px;
         gap: 20px;
+    }
+}
+
+/*------------------------- Media Query for screens from 1050px to 1220px (large tablets/small laptops) -----------------------*/
+
+@media screen and (min-width: 1050px) and (max-width: 1220px) {
+
+    .nav1 {
+        background-color: white;
+        width: 80vw;
+    }
+
+    .nav1 a {
+        font-size: 0.9rem;
+    }
+
+    .shop-name {
+        font-size: 1.7rem;
+    }
+
+    .nav2 {
+        width: 20vw;
+        height: 13vh;
+    }
+
+    .main-images-div {
+        width: 22%;
+        height: 300px;
+    }
+
+    .cake-info-main-div {
+        height: auto;
+    }
+
+}
+
+/*------------------------- Media Query for screens from 1221px to 1290px (large tablets/small laptops) -----------------------*/
+
+@media screen and (min-width: 1221px) and (max-width: 1290px) {
+
+    .main-images-div {
+        height: 320px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .cake-info-main-div {
+        height: auto;
     }
 }
